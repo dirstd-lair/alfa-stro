@@ -15,3 +15,24 @@ $('.burger-menu').on('click', function() {
   }
  
 })
+
+function is_fully_shown(target) {
+  var wt = $(window).scrollTop(); 
+  var wh = $(window).height();    
+  var eh = $(target).height();  
+  var et = $(target).offset().top;
+ 
+  if (et >= wt && et + eh <= wh + wt){
+    return true;
+  } else {
+    return false;    
+  }
+}
+
+$(window).scroll(function(){
+  $('.title-animated-p').each(function(){
+    if (is_fully_shown($(this))) {
+      $('.title-animated-p')
+    }
+  });
+});

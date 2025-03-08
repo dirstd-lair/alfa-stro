@@ -307,7 +307,6 @@ a {
     display: flex;
     flex-direction: column;
 }
-
 .container-description > .wrapper > .content > .button-app {
     position: relative;
     margin: 20px 0px 20px 0px;
@@ -321,7 +320,7 @@ a {
     text-decoration: none;
     color: #FFF;
 }
-
+.footer-site > .wrapper > .section-main > a:hover,
 .container-description > .wrapper > .content > .button-app:hover {
     color: rgb(255, 217, 0);
 }
@@ -339,6 +338,7 @@ a {
 
 .content-main-page-2 > .gallery {
     width: 85%;
+    max-width: 2000px;
     height: auto;
     column-gap: 150px;
     padding-top: 80px;
@@ -351,7 +351,6 @@ a {
 
 .gallery-album {
     width: 90%;
-    max-width: 1000px;
 
     display: flex;
     justify-content: center;
@@ -426,6 +425,10 @@ a {
     margin: 0;
 }
 
+.cn-margin-probmel {
+    padding: 0;
+    margin: 0;
+}
 
 
 @media screen and (max-width: 1025px) and (min-width: 900px) {
@@ -573,3 +576,114 @@ a {
     height: auto;
 }
 
+.footer-site {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #F7F9FD;
+    z-index: 100;
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-site > .wrapper {
+    position: relative;
+    width: 60%;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.footer-site > .wrapper > .cont {
+    display: flex;
+    column-gap: 50px;
+}
+.sect-size,
+.footer-site > .wrapper > .cont > .sect-size {
+    min-height: 350px;
+}
+.footer-site > .wrapper > .section-main,
+.footer-site > .wrapper > .cont > .section-navigation {
+    position: relative;
+    text-align: left;
+    font-family: 'Inter', Verdana, sans-serif;  
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.footer-site > .wrapper > .cont > .section-problem > h1,
+.footer-site > .wrapper > .cont > .section-navigation > h1 {
+    font-weight: 1000;
+    letter-spacing: 2px;
+}
+
+.footer-site > .wrapper > .cont > .section-navigation > .navigation {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.adres, .number, .gmail > a, .gmail, 
+.footer-site > .wrapper > .cont > .section-navigation >  .navigation > a {
+    color: #555;
+}
+.footer-site > .wrapper > .cont > .section-problem > .geo > .gmail > a:hover,
+.footer-site > .wrapper > .cont > .section-navigation > .navigation > a:hover {
+    color: black;
+}
+
+.footer-site > .wrapper > .cont > .section-problem {
+    font-family: 'Inter', Verdana, sans-serif;  
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.footer-site > .wrapper > .cont > .section-problem > .geo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.footer-site > .wrapper > .section-main > h1 {
+    font-weight: 1000;
+    font-size: 3em;
+    letter-spacing: 2px;
+
+    padding: 0;
+    margin: 10px;
+}
+
+.footer-site > .wrapper > .section-main > p {
+  color: #555;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.footer-site > .wrapper > .section-main > a {
+    position: relative;
+    margin: 20px 0px 20px 0px;
+    width: 130px;
+    height: 55px;
+    background-color: black;
+    border-radius: 2px;
+
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #FFF;
+}

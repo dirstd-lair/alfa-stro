@@ -38,6 +38,18 @@
     .content-main-page-3 > .wrapper > .section-description {
         width: auto;
     }
+
+    .footer-site > .wrapper {
+        width: 85%;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .footer-site > .wrapper > .section-main > h1 {
+        margin-left: 0;
+    }
+
+
     
 }
 

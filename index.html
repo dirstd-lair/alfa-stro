@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
     <script type='text/javascript' src='js/jquery-3.1.1.min.js'></script>
     <title>Альфа Строй</title>
 </head>
@@ -41,8 +42,8 @@
             </div>
         </section>
     </header>
-    <div class="block-header"></div>
-    <main class="content-main-page-1">
+    <div class="block-header"  id="home"></div>
+    <main class="content-main-page-1" >
         <section>
           <div class="container-description">
              <div class="wrapper">
@@ -62,7 +63,7 @@
           
         </section>
     </main>
-    <div class="content-main-page-2"id="about">
+    <div class="content-main-page-2" id="about">
         <section class="gallery">
             <div class="gallery-album">
                 <img src="assets/photos-gallery/image.png" alt="">
@@ -73,7 +74,7 @@
                     <p>О нас</p>
                 </div>
                 <div class="cn">
-                    <div class="title">
+                    <div class="title title-animated-p">
                         <h1>Почему клиенты выбирают нас?</h1>
                     </div>
                     <div class="text">
@@ -143,6 +144,53 @@
             </div>
         </div>
     </div>
+    <footer class="footer-site">
+        <div class="wrapper">
+           <div class="cont">
+            <section class="section-navigation sect-size">
+                <h1>Карта сайта</h1>
+                <div class="navigation">
+                    <a href="#home">Домой</a>
+                    <a href="#about">О нас</a>
+                    <a href="#project">Проекты</a>
+                    <a href="#work">Работы</a>
+                </div>
+            </section>
+            <section class="section-problem sect-size">
+                <h1>Остались<br>вопросы?</h1>
+                <div class="geo">
+                    <div class="adres">
+                        <strong>Мы находимся:</strong><br>
+                        <p class="cn-margin-probmel">г. Екатеринбург,<br>ул. Мичурина,<br>д.101, оф.1</p>
+                    </div>
+                    <div class="number">
+                        <strong>Телефон:</strong><br>
+                        <p class="cn-margin-probmel">+79676393456</p>
+                    </div>
+                    <div class="gmail">
+                        <strong>Эл.почта:</strong><br>
+                        <a href="mailto:alfastroy196@mail.ru" class="cn-margin-probmel">alfastroy196@mail.ru</a>
+                    </div>
+                </div>
+            </section>
+           </div>
+            <section class="section-main sect-size">
+                <h1>Нужен дом?<br>Построим!</h1>
+                <p>Просто напишите или позвоните нам и мы предложим<br> варианты под любой бюджет.</p>
+                <a href="#home" class="button-home">ВВЕРХ</a>
+            </section>
+        </div>
+    </footer>
   <script src="js/index.js"></script>
+  <script>
+    wow = new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 0,
+    mobile: true,
+    live: true
+})
+wow.init();
+  </script>
 </body>
 </html>
