@@ -1,0 +1,58 @@
+
+
+@media screen and (max-width: 799px) {
+    .menu {
+        display: none;
+    } 
+
+    .logo {
+        width: 30%;
+        height: 30%;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .content-main-page-2 > .gallery {
+        flex-direction: column;
+    }
+
+
+    .container-description > .wrapper {
+        width: 80%;
+    }
+    
+    .gallery-album > img {
+        width: 90%;
+    }
+
+    .content-main-page-3 > .wrapper {
+        flex-direction: column;
+    }
+
+    .content-main-page-3 > .wrapper > .section-title-desc {
+        width: 100%;
+    }
+
+    .content-main-page-3 > .wrapper > .section-description {
+        width: auto;
+    }
+    
+}
+
+@media screen and (min-width: 780px) {
+    .main-header {
+        position: fixed;
+        z-index: 9999;
+    }
+
+    .block-header {
+        display: flex;
+    }
+
+    .main-header {
+        z-index: 500;
+    }
+}
+
